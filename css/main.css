@@ -8,8 +8,6 @@ body {
   text-align: center;
 }
 
-
-
 [class*="col-"] {
   border: 2px solid black;
   background-color: pink;
@@ -25,4 +23,10 @@ header [class*="col-"] {
 
 main [class*="col-"], footer [class*="col-"]{
   height: 200px;
+}
+
+.container > [class*="col-"] .container > [class*="col-"] {
+  height: 100%;
+  background-color: red;
+  border: 2px solid white;
 }
