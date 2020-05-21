@@ -4,7 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  text-align: center;
+}
+
 [class*="col-"] {
   border: 2px solid black;
   background-color: pink;
+}
+
+[class*="nested-"] {
+  border: 2px solid white;
+  background-color: red;
+}
+
+header [class*="col-"] {
+  height: 130px;
+}
+
+main [class*="col-"], footer [class*="col-"]{
+  height: 200px;
 }
